@@ -1,5 +1,5 @@
 #!/bin/sh
 
 apk add git nodejs neovim ripgrep alpine-sdk --update
-mkdir ${HOME}/.config/nvim
-git clone https://github.com/NvChad/NvChad ${HOME}/.config/nvim
+mkdir -p ${HOME}/.config
+git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
