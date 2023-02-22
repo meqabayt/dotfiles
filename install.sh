@@ -1,3 +1,6 @@
 #!/bin/sh
 
-EXPORT MEQABAYT_DOTFILES_INITIALIZED=true
+
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
+chmod u+x nvim.appimage
+./nvim.appimage
